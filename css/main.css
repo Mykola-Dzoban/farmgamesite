@@ -1,0 +1,268 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FDFCEF;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+p {
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.header {
+    padding-top: 60px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 82px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    gap: 10px;
+    width: 182px;
+    height: 30px;
+}
+
+.offer {
+    width: 465px;
+    height: 389px;
+}
+
+.offer-text{
+    margin: 30px 0;
+}
+
+.button {
+    background: #FF6861;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 0;
+    font-weight: 700;
+    line-height: 1.19em;
+    display: block;
+    width: 216px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background: linear-gradient(180deg, #ffae6d 0%, #d13434 100%);
+}
+
+.cow {
+    padding: 105px;
+    background: linear-gradient(180deg, #FFE195 0%, #FF5B5B 100%);
+    border-radius: 70px;
+}
+
+.cow:hover {
+    background: linear-gradient(180deg, #817876 0%, #f5f5eb 100%);
+}
+
+.features-text {
+    line-height: 1.37em;
+    margin: 0;
+    padding-top: 11px;
+}
+
+
+.features-picture {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.container-features {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    margin: 0 auto;
+    width: 720px;
+}
+
+section {
+    padding-top: 120px;
+}
+
+.action-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 76px 125px 75px 122px;
+    gap: 101px;
+    justify-content: center;
+}
+
+.action-wrap:hover {
+    background: linear-gradient(102deg, #FFDFDE 17.38%, #FFF6DF 81.25%);
+}
+
+.paragraph {
+    margin: 24px 0;
+}
+
+.hero-text {
+    width: 465px;
+}
+
+.action-wrap h2 {
+    text-align:left;
+    margin-bottom: 0;
+}
+
+.credits {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer {
+    padding: 120px 0;
+}
+
+/*Animation*/
+
+@keyframes rot {
+    0% {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    100% {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.action-wrap img {
+    animation: 1s linear 0s normal none infinite running rot;
+}
+
+
+/* Responsive */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+    .offer {
+        text-align: center;
+        width: auto;
+    }
+    .button {
+        margin: 0 auto;
+    }
+    .action-wrap {
+        flex-direction: column-reverse;
+        padding: 101px 37px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .action-wrap h2 {
+        text-align: center;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .container-features {
+        width: 100%;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .cow {
+        width: 320px;
+        padding: 72px;
+    }
+    section {
+        padding-top: 90px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .features-picture {
+        flex-direction: column;
+        text-align: center;
+    }
+    .action-wrap img {
+        width: 201px;
+    }
+}
